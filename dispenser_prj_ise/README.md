@@ -1,51 +1,79 @@
-# Bare Metal Blinky
+Autor: Domenje Carlos R. - 2021
 
-This guide reviews the steps required to get Blinky with Bare Metal working on an Mbed OS platform.
+# Dispenser 
 
-Please install [mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
+Proyecto Final Introduccion a Sistemas Embebidos
 
-## Import the example application
+## Introduccion 🚀
 
-From the command-line, import the example:
+Este proyecto tiene como finalidad la evaluacion de lo aprendido en la catedra Introduccion a los Sistemas Embebidos correspondiente a la especializacion en internet de las cosas de la FIUBA. 
+
+
+
+Mira **Despliegue** para conocer como desplegar el proyecto.
+
+
+### Pre-requisitos 📋
+
+[Docker](https://docs.docker.com/get-docker/)  y [Docker Compose](https://docs.docker.com/compose/install/) son necesarios para la ejecucion del proyecto.
+
+Guia de instalacion en Ubuntu 18,17,16 y 14
+[Docker install - Ubuntu](https://iot-es.herokuapp.com/post/details/2) 
+
+Opcional: 
+[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) es necesario si quiere realizar por linea de comandos el clone del repositorio.
+
+Descargar o clonar el repositorio del proyecto.
+```
+git clone https://github.com/carlosdomenje/prj_ISE_dispenser.git
 
 ```
-mbed import mbed-os-example-blinky-baremetal
-cd mbed-os-example-blinky-baremetal
-```
 
-### Now compile
+## Despliegue 📦
 
-Invoke `mbed compile`, and specify the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler:
+Para realizar el despliegue de la aplicacion primero debera ingresar a la carpeta del proyecto:
 
 ```
-mbed compile -m K64F -t ARM
+cd 
+```
+Abrir  y ejecutar:
+
 ```
 
-Your PC may take a few minutes to compile your code. At the end, you see the following result:
-
-```
-[snip]
-Image: ./BUILD/K64F/GCC_ARM/mbed-os-example-blinky-baremetal.bin
 ```
 
-### Program your board
 
-1. Connect your mbed device to the computer over USB.
-1. Copy the binary file to the mbed device.
-1. Press the reset button to start the program.
 
-The LED on your platform turns on and off.
+## Captura de la aplicacion 📳️
 
-## Troubleshooting
+![Aplicacion](/app.png)
 
-If you have problems, you can review the [documentation](https://os.mbed.com/docs/latest/tutorials/debugging.html) for suggestions on what could be wrong and how to fix it.
+## Herramientas utilizadas 🛠️
 
-## Related Links
 
-* [Mbed OS Configuration](https://os.mbed.com/docs/latest/reference/configuration.html)
+* [nucleo F](https://www.phpmyadmin.net/)
 
-### License and contributions
+## Contribuir 🖇️
 
-The software is provided under Apache-2.0 license. Contributions to this project are accepted under the same license. Please see contributing.md for more info.
+Puede contribuir realizando un pull request con las sugerencias al proyecto.
 
-This project contains code from other projects. The original license text is included in those source files. They must comply with our license guide.
+## Wiki 📖
+
+Puedes encontrar 
+
+## Versionado 📌
+
+Se utiliza [Git](https://git-scm.com/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/carlosdomenje/prj_ISE_dispenser.git).
+
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia GPL.
+
+## Gratitud 🎁
+
+* Con este proyecto pude comprender .📢
+* Agradezco a todos los profesores de la catedra Introduccion a los Sistemas Embebidos de FIUBA🤓.
+
+
+---
