@@ -2,8 +2,13 @@
 
 #include "mbed.h"
 #include "arm_book_lib.h"
-
-
+#include "access_control.h"
+#include "bottle_level_control.h"
+#include "buzzer_control.h"
+#include "dispenser_control.h"
+#include "distance_hand_control.h"
+#include "screen.h"
+#include "serial_com.h"
 
 //=====[Declaration of private defines]======================================
 
@@ -31,5 +36,11 @@
 
 void systemInit()
 {
-
+    accessControlInit();
+    liquidControlInit();
+    buzzerInit();
+    alcoholControlInit();
+    handDistanceInit();
+    commTempInit();
+    screenInit();
 }

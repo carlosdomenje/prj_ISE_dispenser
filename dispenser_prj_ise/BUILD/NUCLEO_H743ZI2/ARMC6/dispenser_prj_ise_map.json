@@ -2,21 +2,32 @@
     {
         "module": "[lib]/c_w.l",
         "size": {
-            ".text": 11045,
+            ".text": 14789,
             ".data": 12,
             ".bss": 280,
-            ".text-delta": 11045,
-            ".data-delta": 12,
-            ".bss-delta": 280
+            ".text-delta": 0,
+            ".data-delta": 0,
+            ".bss-delta": 0
         }
     },
     {
         "module": "[lib]/fz_wv.l",
         "size": {
-            ".text": 34,
+            ".text": 652,
             ".data": 0,
             ".bss": 0,
-            ".text-delta": 34,
+            ".text-delta": 328,
+            ".data-delta": 0,
+            ".bss-delta": 0
+        }
+    },
+    {
+        "module": "[lib]/libcpp_w.l",
+        "size": {
+            ".text": 822,
+            ".data": 0,
+            ".bss": 0,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -27,7 +38,7 @@
             ".text": 44,
             ".data": 0,
             ".bss": 0,
-            ".text-delta": 44,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -35,10 +46,10 @@
     {
         "module": "[lib]/m_wv.l",
         "size": {
-            ".text": 48,
+            ".text": 616,
             ".data": 0,
             ".bss": 0,
-            ".text-delta": 48,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -49,18 +60,18 @@
             ".text": 32,
             ".data": 0,
             ".bss": 4352,
-            ".text-delta": 32,
+            ".text-delta": 0,
             ".data-delta": 0,
-            ".bss-delta": 4352
+            ".bss-delta": 0
         }
     },
     {
         "module": "dependencies/external_libs",
         "size": {
-            ".text": 6324,
+            ".text": 6910,
             ".data": 0,
             ".bss": 0,
-            ".text-delta": 6324,
+            ".text-delta": 586,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -68,21 +79,32 @@
     {
         "module": "dependencies/modules",
         "size": {
-            ".text": 734,
+            ".text": 1926,
             ".data": 0,
-            ".bss": 1348,
-            ".text-delta": 734,
+            ".bss": 1470,
+            ".text-delta": 452,
             ".data-delta": 0,
-            ".bss-delta": 1348
+            ".bss-delta": 10
+        }
+    },
+    {
+        "module": "dependencies/system_control.o",
+        "size": {
+            ".text": 32,
+            ".data": 0,
+            ".bss": 0,
+            ".text-delta": 20,
+            ".data-delta": 0,
+            ".bss-delta": 0
         }
     },
     {
         "module": "main.o",
         "size": {
-            ".text": 8,
+            ".text": 12,
             ".data": 0,
             ".bss": 0,
-            ".text-delta": 8,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -90,12 +112,12 @@
     {
         "module": "mbed-os/drivers",
         "size": {
-            ".text": 3409,
+            ".text": 3969,
             ".data": 0,
             ".bss": 20,
-            ".text-delta": 3409,
+            ".text-delta": 526,
             ".data-delta": 0,
-            ".bss-delta": 20
+            ".bss-delta": 0
         }
     },
     {
@@ -104,39 +126,39 @@
             ".text": 2340,
             ".data": 8,
             ".bss": 130,
-            ".text-delta": 2340,
-            ".data-delta": 8,
-            ".bss-delta": 130
+            ".text-delta": 0,
+            ".data-delta": 0,
+            ".bss-delta": 0
         }
     },
     {
         "module": "mbed-os/platform",
         "size": {
-            ".text": 7763,
+            ".text": 7959,
             ".data": 64,
             ".bss": 300,
-            ".text-delta": 7763,
-            ".data-delta": 64,
-            ".bss-delta": 300
+            ".text-delta": 0,
+            ".data-delta": 0,
+            ".bss-delta": 0
         }
     },
     {
         "module": "mbed-os/targets",
         "size": {
-            ".text": 36015,
+            ".text": 38439,
             ".data": 12,
             ".bss": 2107,
-            ".text-delta": 36015,
-            ".data-delta": 12,
-            ".bss-delta": 2107
+            ".text-delta": 2424,
+            ".data-delta": 0,
+            ".bss-delta": 0
         }
     },
     {
         "summary": {
-            "static_ram": 8633,
-            "static_ram_delta": 8633,
-            "total_flash": 67892,
-            "total_flash_delta": 67892
+            "static_ram": 8755,
+            "static_ram_delta": 10,
+            "total_flash": 78638,
+            "total_flash_delta": 4336
         }
     }
 ]

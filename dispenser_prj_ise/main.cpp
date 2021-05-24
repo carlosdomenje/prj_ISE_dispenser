@@ -4,13 +4,14 @@
  */
 
 #include "mbed.h"
-
+#include "system_control.h"
 
 
 
 int main()
 {
 
+    systemInit();
     
     while (true)
     {

@@ -13,7 +13,7 @@
 
 //=====[Declaration and initialization of public global objects]===============
 
-PwmOut buzzerPin(D2);
+PwmOut buzzerPin(PE_10);
 
 //=====[Declaration of external public global variables]=======================
 

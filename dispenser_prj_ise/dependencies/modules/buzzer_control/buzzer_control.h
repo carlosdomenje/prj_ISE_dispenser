@@ -15,10 +15,10 @@
 
 
 
-void sirenInit();
-bool sirenStateRead();
-void sirenStateWrite( bool state );
-void sirenUpdate( int strobeTime );
+void buzzerInit();
+bool buzzerStateRead();
+void buzzerStateWrite( bool state );
+void buzzerUpdate( int strobeTime );
 
 
 //=====[#include guards - end]=================================================
