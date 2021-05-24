@@ -157,18 +157,4 @@ BUILD/NUCLEO_H743ZI2/ARMC6/main.o: main.cpp \
   mbed-os/platform/mbed_mpu_mgmt.h mbed-os/hal/mpu_api.h \
   mbed-os/platform/ScopedRamExecutionLock.h \
   mbed-os/platform/mbed_stats.h mbed-os/platform/FunctionPointer.h \
-  mbed-os/platform/ScopedLock.h \
-  dependencies/libs/HC_SR04_Ultrasonic_Library/ultrasonic.h \
-  dependencies/libs/UniGraphic/Inits/SH1106.h \
-  dependencies/libs/UniGraphic/Display/LCD.h \
-  dependencies/libs/UniGraphic/Protocols/PAR8.h \
-  dependencies/libs/UniGraphic/Protocols/Protocols.h \
-  dependencies/libs/UniGraphic/Protocols/PAR16.h \
-  dependencies/libs/UniGraphic/Protocols/BUS8.h \
-  dependencies/libs/UniGraphic/Protocols/SPI8.h \
-  dependencies/libs/UniGraphic/Protocols/SPI16.h \
-  dependencies/libs/UniGraphic/Protocols/I2C_bus.h \
-  dependencies/libs/UniGraphic/Graphics/GraphicsDisplay.h \
-  dependencies/libs/UniGraphic/Graphics/TextDisplay.h \
-  dependencies/libs/UniGraphic/Font/Terminal6x8.h \
-  dependencies/modules/serial_com/serial_com.h
+  mbed-os/platform/ScopedLock.h

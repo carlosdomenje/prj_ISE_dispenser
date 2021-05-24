@@ -159,5 +159,4 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/modules/serial_com/serial_com.o: \
   mbed-os/platform/ScopedRamExecutionLock.h \
   mbed-os/platform/mbed_stats.h mbed-os/platform/FunctionPointer.h \
   mbed-os/platform/ScopedLock.h dependencies/arm_book_lib.h \
-  dependencies/modules/serial_com/serial_com.h \
-  dependencies/modules/date_and_time/date_and_time.h
+  dependencies/modules/serial_com/serial_com.h

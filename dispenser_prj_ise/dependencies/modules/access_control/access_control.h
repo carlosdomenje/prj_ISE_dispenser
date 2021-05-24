@@ -6,6 +6,7 @@
 #include "mbed.h"
 #include <cstdint>
 //=====[Libraries]=============================================================
+#include "DigitalOut.h"
 
 //=====[Declaration of public defines]=======================================
 
@@ -13,8 +14,9 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-
-
+void giveAccessControl();
+void resetAccessControl();
+void accessControlInit();
 
 
 

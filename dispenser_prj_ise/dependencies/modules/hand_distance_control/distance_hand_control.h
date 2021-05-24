@@ -14,7 +14,8 @@
 //=====[Declarations (prototypes) of public functions]=========================
 
 
-
+bool getHandDistance();
+void handDistanceInit();
 
 
 

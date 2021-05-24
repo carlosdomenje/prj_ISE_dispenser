@@ -5,6 +5,7 @@
 
 #include "mbed.h"
 #include <cstdint>
+#include "DigitalOut.h"
 //=====[Libraries]=============================================================
 
 //=====[Declaration of public defines]=======================================
@@ -15,6 +16,10 @@
 
 
 
+void alcoholControlInit();
+
+void giveAlcoholControl();
+void resetAlcoholControl();
 
 
 

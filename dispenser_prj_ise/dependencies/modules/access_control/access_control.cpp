@@ -2,7 +2,7 @@
 
 #include "mbed.h"
 #include "arm_book_lib.h"
-
+#include "access_control.h"
 
 
 //=====[Declaration of private defines]======================================
@@ -13,6 +13,7 @@
 
 //=====[Declaration and initialization of public global objects]===============
 
+DigitalOut outEntry(D1);
 
 
 //=====[Declaration of external public global variables]=======================
@@ -29,7 +30,18 @@
 //=====[Implementations of public functions]===================================
 
 
-void systemInit()
-{
 
+void accessControlInit()
+{
+    outEntry = 0;
+}
+
+void giveAccessControl(){
+    outEntry = 1;
+    thread_sleep_for(2000);
+    outEntry = 0;
+}
+
+void resetAccessControl(){
+    outEntry = 0;
 }

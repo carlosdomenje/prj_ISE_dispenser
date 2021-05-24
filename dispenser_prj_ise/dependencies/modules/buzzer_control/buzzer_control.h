@@ -15,7 +15,10 @@
 
 
 
-
+void sirenInit();
+bool sirenStateRead();
+void sirenStateWrite( bool state );
+void sirenUpdate( int strobeTime );
 
 
 //=====[#include guards - end]=================================================
