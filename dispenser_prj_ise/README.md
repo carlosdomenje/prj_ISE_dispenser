@@ -32,15 +32,15 @@ El proyecto final de aprobación de la materia consiste en una presentación de 
 
 Para ver una explicación detallada de cada uno de los puntos propuestos, abra el informe adjunto. 
 
-* [Informe del TP](/informe.pdf)
+* [Informe del TP](./informe.pdf)
 
 
 ### Entregables del proyecto: 🛠️
 
-* Diagrama en bloques -> (ver: [Diagrama en bloques] (/diagrama-bloques.pdf))
-* Conexionado hardware -> (ver: [Conexionado](/conexionado.pdf))
+* Diagrama en bloques -> (ver: [Diagrama en bloques] (/diagramaFlujo.pdf))
+* Conexionado hardware -> (ver: [Conexionado](./tp-diagrama.png))
 * Modelado del software (o de alguna parte del mismo) (Diagrama de flujo o máquinas de estado u otro).
-    -> (ver: [Diagrama de flujo](/diagrama-flujo.pdf))
+    -> (ver: [Diagrama](./diagramaFlujo.pdf))
 * Repositorio con el código (:))
 * Video del funcionamiento -> (https://youtu.be/xVcdWI9hyU0)
 
@@ -72,7 +72,7 @@ git clone https://github.com/carlosdomenje/prj_ISE_dispenser.git
 
 ## Captura de la Implementación 📳️
 
-![Aplicacion](/app.png)
+![implementacion](./implementacion.png)
 
 
 ## Contribuir 🖇️
