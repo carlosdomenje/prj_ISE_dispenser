@@ -1,8 +1,9 @@
-BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/system_control.o: \
-  dependencies/system_control.cpp \
-  BUILD/NUCLEO_H743ZI2/ARMC6/mbed_config.h mbed-os/drivers/Ticker.h \
-  mbed-os/platform/cxxsupport/mstd_utility mbed-os/drivers/TimerEvent.h \
-  mbed-os/hal/ticker_api.h mbed-os/targets/TARGET_STM/device.h \
+BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/external_libs/Adafruit_GFX/Adafruit_SSD1306.o: \
+  dependencies/external_libs/Adafruit_GFX/Adafruit_SSD1306.cpp \
+  BUILD/NUCLEO_H743ZI2/ARMC6/mbed_config.h mbed-os/mbed.h \
+  mbed-os/platform/mbed_version.h mbed-os/platform/mbed_toolchain.h \
+  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/platform.h \
+  mbed-os/platform/mbed_retarget.h mbed-os/targets/TARGET_STM/device.h \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/objects.h \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/cmsis.h \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/device/stm32h7xx.h \
@@ -105,19 +106,15 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/system_control.o: \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/device/stm32h7xx_ll_tim.h \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/device/stm32h7xx_ll_pwr.h \
   mbed-os/targets/TARGET_STM/gpio_object.h \
-  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
-  mbed-os/platform/mbed_preprocessor.h \
+  mbed-os/platform/mbed_assert.h \
   mbed-os/targets/TARGET_STM/us_ticker_defines.h \
   mbed-os/targets/TARGET_STM/TARGET_STM32H7/us_ticker_data.h \
-  mbed-os/platform/NonCopyable.h mbed-os/platform/Callback.h \
-  mbed-os/hal/lp_ticker_api.h mbed-os/mbed.h \
-  mbed-os/platform/mbed_version.h mbed-os/platform/platform.h \
-  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_application.h \
-  mbed-os/platform/mbed_error.h mbed-os/platform/mbed_interface.h \
-  mbed-os/platform/mbed_debug.h mbed-os/drivers/DigitalIn.h \
-  mbed-os/hal/gpio_api.h mbed-os/hal/pinmap.h \
-  mbed-os/drivers/DigitalOut.h mbed-os/drivers/DigitalInOut.h \
-  mbed-os/drivers/BusIn.h mbed-os/platform/PlatformMutex.h \
+  mbed-os/platform/mbed_application.h mbed-os/platform/mbed_error.h \
+  mbed-os/platform/mbed_interface.h mbed-os/platform/mbed_debug.h \
+  mbed-os/drivers/DigitalIn.h mbed-os/hal/gpio_api.h \
+  mbed-os/hal/pinmap.h mbed-os/drivers/DigitalOut.h \
+  mbed-os/drivers/DigitalInOut.h mbed-os/drivers/BusIn.h \
+  mbed-os/platform/PlatformMutex.h mbed-os/platform/NonCopyable.h \
   mbed-os/drivers/BusOut.h mbed-os/drivers/BusInOut.h \
   mbed-os/drivers/PortIn.h mbed-os/hal/port_api.h \
   mbed-os/drivers/PortInOut.h mbed-os/drivers/PortOut.h \
@@ -130,10 +127,10 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/system_control.o: \
   mbed-os/drivers/PwmOut.h mbed-os/hal/pwmout_api.h \
   mbed-os/drivers/Serial.h mbed-os/platform/Stream.h \
   mbed-os/platform/FileLike.h mbed-os/platform/FileBase.h \
-  mbed-os/platform/FileHandle.h mbed-os/platform/mbed_poll.h \
-  mbed-os/drivers/SerialBase.h mbed-os/hal/serial_api.h \
-  mbed-os/hal/buffer.h mbed-os/hal/dma_api.h mbed-os/drivers/SPI.h \
-  mbed-os/hal/spi_api.h mbed-os/platform/CThunk.h \
+  mbed-os/platform/FileHandle.h mbed-os/platform/Callback.h \
+  mbed-os/platform/mbed_poll.h mbed-os/drivers/SerialBase.h \
+  mbed-os/hal/serial_api.h mbed-os/hal/buffer.h mbed-os/hal/dma_api.h \
+  mbed-os/drivers/SPI.h mbed-os/hal/spi_api.h mbed-os/platform/CThunk.h \
   mbed-os/platform/internal/CThunkBase.h \
   mbed-os/platform/CircularBuffer.h mbed-os/platform/mbed_critical.h \
   mbed-os/platform/Transaction.h mbed-os/drivers/SPISlave.h \
@@ -147,21 +144,21 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/system_control.o: \
   mbed-os/drivers/QSPI.h mbed-os/drivers/Watchdog.h \
   mbed-os/hal/watchdog_api.h mbed-os/drivers/ResetReason.h \
   mbed-os/hal/reset_reason_api.h mbed-os/drivers/Timer.h \
-  mbed-os/drivers/Timeout.h mbed-os/drivers/LowPowerTimeout.h \
-  mbed-os/drivers/LowPowerTicker.h mbed-os/drivers/LowPowerTimer.h \
-  mbed-os/platform/LocalFileSystem.h mbed-os/platform/mbed_wait_api.h \
-  mbed-os/platform/mbed_thread.h mbed-os/hal/sleep_api.h \
-  mbed-os/platform/mbed_power_mgmt.h mbed-os/platform/mbed_rtc_time.h \
-  mbed-os/platform/ATCmdParser.h mbed-os/platform/FileSystemHandle.h \
-  mbed-os/platform/DirHandle.h mbed-os/platform/CriticalSectionLock.h \
+  mbed-os/hal/ticker_api.h mbed-os/drivers/Ticker.h \
+  mbed-os/platform/cxxsupport/mstd_utility mbed-os/drivers/TimerEvent.h \
+  mbed-os/hal/lp_ticker_api.h mbed-os/drivers/Timeout.h \
+  mbed-os/drivers/LowPowerTimeout.h mbed-os/drivers/LowPowerTicker.h \
+  mbed-os/drivers/LowPowerTimer.h mbed-os/platform/LocalFileSystem.h \
+  mbed-os/platform/mbed_wait_api.h mbed-os/platform/mbed_thread.h \
+  mbed-os/hal/sleep_api.h mbed-os/platform/mbed_power_mgmt.h \
+  mbed-os/platform/mbed_rtc_time.h mbed-os/platform/ATCmdParser.h \
+  mbed-os/platform/FileSystemHandle.h mbed-os/platform/DirHandle.h \
+  mbed-os/platform/CriticalSectionLock.h \
   mbed-os/platform/DeepSleepLock.h mbed-os/platform/ScopedRomWriteLock.h \
   mbed-os/platform/mbed_mpu_mgmt.h mbed-os/hal/mpu_api.h \
   mbed-os/platform/ScopedRamExecutionLock.h \
   mbed-os/platform/mbed_stats.h mbed-os/platform/FunctionPointer.h \
-  mbed-os/platform/ScopedLock.h dependencies/arm_book_lib.h \
-  dependencies/modules/access_control/access_control.h \
-  dependencies/modules/bottle_level_control/bottle_level_control.h \
-  dependencies/modules/dispenser_control/dispenser_control.h \
-  dependencies/modules/hand_distance_control/distance_hand_control.h \
-  dependencies/modules/screen_control/screen.h \
-  dependencies/modules/serial_com/serial_com.h
+  mbed-os/platform/ScopedLock.h \
+  dependencies/external_libs/Adafruit_GFX/Adafruit_SSD1306.h \
+  dependencies/external_libs/Adafruit_GFX/Adafruit_GFX.h \
+  dependencies/external_libs/Adafruit_GFX/Adafruit_GFX_Config.h

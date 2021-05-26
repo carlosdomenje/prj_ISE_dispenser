@@ -16,8 +16,8 @@
 
 void systemInit();
 
-
-
+void systemTask();
+void systemRun();
 
 //=====[#include guards - end]=================================================
 

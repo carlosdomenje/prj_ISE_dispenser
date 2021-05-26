@@ -159,7 +159,6 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/modules/screen_control/screen.o: \
   mbed-os/platform/ScopedRamExecutionLock.h \
   mbed-os/platform/mbed_stats.h mbed-os/platform/FunctionPointer.h \
   mbed-os/platform/ScopedLock.h dependencies/arm_book_lib.h \
-  dependencies/modules/screen_control/screen.h \
   dependencies/external_libs/UniGraphic/Inits/SH1106.h \
   dependencies/external_libs/UniGraphic/Display/LCD.h \
   dependencies/external_libs/UniGraphic/Protocols/PAR8.h \
@@ -171,4 +170,5 @@ BUILD/NUCLEO_H743ZI2/ARMC6/dependencies/modules/screen_control/screen.o: \
   dependencies/external_libs/UniGraphic/Protocols/I2C_bus.h \
   dependencies/external_libs/UniGraphic/Graphics/GraphicsDisplay.h \
   dependencies/external_libs/UniGraphic/Graphics/TextDisplay.h \
-  dependencies/external_libs/UniGraphic/Font/Terminal6x8.h
+  dependencies/external_libs/UniGraphic/Font/Terminal6x8.h \
+  dependencies/modules/screen_control/screen.h

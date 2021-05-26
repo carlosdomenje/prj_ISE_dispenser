@@ -4,7 +4,7 @@
 #define _SCREEN_H_
 
 #include "mbed.h"
-#include "SH1106.h"
+//#include "SH1106.h"
 #include <cstdint>
 //=====[Libraries]=============================================================
 
@@ -16,8 +16,15 @@
 
 
 void screenInit();
-
-
+void screenClear();
+void screenShowMainScreen(float ambT, float alcLevel, float timeOpen);
+void screenShowMeasureScreen(float tempO);
+void screenShowDoneScreen(float tempO);
+void screenShowErrorScreen();
+void screenShowOverTempScreen();
+void screenShowUnderTempScreen();
+void screenShowInScreen();
+void screenShowAlcoholScreen();
 
 //=====[#include guards - end]=================================================
 

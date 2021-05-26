@@ -9,7 +9,7 @@
 //=====[Declaration of private data types]=====================================
 
 
-void refreshDistance();
+void checkDistance();
 void setHandDistance(uint16_t dist);
 //=====[Declaration and initialization of public global objects]===============
 
@@ -18,7 +18,11 @@ void setHandDistance(uint16_t dist);
 //=====[Declaration of external public global variables]=======================
 
 //=====[Declaration and initialization of public global variables]=============
-ultrasonic handDistance(D8, D9, .5, .1);
+void refreshDistance(int dist){
+    setHandDistance(dist);
+}
+
+ultrasonic handDistance(D8, D9, .5, .1, &refreshDistance);
 bool distLevel = false;
 Ticker timer;
 //=====[Declaration and initialization of private global variables]============
@@ -29,15 +33,15 @@ Ticker timer;
 
 void handDistanceInit(){
     handDistance.startUpdates(); //Start measuring hand distance
-    timer.attach(&refreshDistance, 0.5);
+    timer.attach(&checkDistance, 0.01);
 }
 
-void refreshDistance(){
-    setHandDistance(handDistance.getCurrentDistance());
+void checkDistance(){
+    handDistance.checkDistance();
 }
 
 void setHandDistance(uint16_t dist){
-    if (dist > 20 && dist < 100){
+    if (dist < 100){
         distLevel = true;
     }else {
         distLevel = false;

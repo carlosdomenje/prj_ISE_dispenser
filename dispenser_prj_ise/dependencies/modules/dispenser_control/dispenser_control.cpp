@@ -7,7 +7,7 @@
 
 
 //=====[Declaration of private defines]======================================
-#define POTENTIOMETER_TIME_LEVEL            2
+#define POTENTIOMETER_TIME_LEVEL            5
 //=====[Declaration of private data types]=====================================
 
 DigitalOut outAlcohol(D0);
@@ -21,6 +21,7 @@ AnalogIn potentiometer(A0);
 //=====[Declaration and initialization of public global variables]=============
 float potentiometerReading = 0.0;
 float timeGivingAlcohol = 0.0;
+bool isDone = false;
 Ticker timerAlcohol;
 //=====[Declaration and initialization of private global variables]============
 
@@ -32,8 +33,9 @@ void timeDispenser();
 //=====[Implementations of public functions]===================================
 
 void alcoholControlInit(){
-    outAlcohol = 0;
-    timerAlcohol.attach(&timeDispenser, 5.0);
+    outAlcohol = ON;
+    isDone = false;
+    timerAlcohol.attach(&timeDispenser, 1.0);
 }
 
 void timeDispenser() {
@@ -43,13 +45,16 @@ void timeDispenser() {
 
 
 void giveAlcoholControl(){
-    outAlcohol = 1;
+    outAlcohol = OFF;
+    isDone = false;
     thread_sleep_for(uint32_t(getTimeAlcohol() * 1000));
-    outAlcohol = 0;
+    isDone = true;
+    outAlcohol = ON;
 }
 
 void resetAlcoholControl(){
-     outAlcohol = 0;
+     outAlcohol = ON;
+     isDone = false;
 }
 
 
@@ -64,4 +69,8 @@ void setTimeAlcohol(float value){
 
 float getTimeAlcohol(){
     return timeGivingAlcohol;
+}
+
+bool isAlcoholDone(){
+    return isDone;
 }

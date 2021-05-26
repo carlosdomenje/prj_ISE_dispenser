@@ -15,6 +15,6 @@ int main()
     
     while (true)
     {
-        thread_sleep_for(100);
+        systemRun();
     }
 }

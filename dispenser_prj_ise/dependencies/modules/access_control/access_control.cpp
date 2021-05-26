@@ -33,15 +33,15 @@ DigitalOut outEntry(D1);
 
 void accessControlInit()
 {
-    outEntry = 0;
+    outEntry = ON;
 }
 
 void giveAccessControl(){
-    outEntry = 1;
+    outEntry = OFF;
     thread_sleep_for(2000);
-    outEntry = 0;
+    outEntry = ON;
 }
 
 void resetAccessControl(){
-    outEntry = 0;
+    outEntry = ON;
 }

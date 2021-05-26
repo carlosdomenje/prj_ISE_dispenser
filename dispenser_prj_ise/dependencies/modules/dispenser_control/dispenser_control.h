@@ -20,8 +20,8 @@ void alcoholControlInit();
 
 void giveAlcoholControl();
 void resetAlcoholControl();
-
-
+float getTimeAlcohol();
+bool isAlcoholDone();
 
 //=====[#include guards - end]=================================================
 

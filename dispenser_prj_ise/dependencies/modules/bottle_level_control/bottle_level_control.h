@@ -15,7 +15,7 @@
 
 
 
-uint8_t getLiquidLevel();
+float getLiquidLevel();
 void liquidControlInit();
 
 //=====[#include guards - end]=================================================

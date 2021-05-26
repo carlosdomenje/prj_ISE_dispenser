@@ -18,36 +18,44 @@
 //=====[Declaration of external public global variables]=======================
 
 //=====[Declaration and initialization of public global variables]=============
-ultrasonic liquid(D7, D6, 100, .1);
-uint8_t liquidLevel = 0;
+
+float liquidLevel = 0.0;
 Ticker timerLevel;
+
 //=====[Declaration and initialization of private global variables]============
-
-//=====[Declarations (prototypes) of private functions]========================
-void refreshLevel();
-void setLiquidLevel(uint16_t liquid);
-//=====[Implementations of public functions]===================================
-
-void liquidControlInit(){
-    liquid.startUpdates(); //Start measuring alcohol level.
-    timerLevel.attach(&refreshLevel, 5.0);
-}
-
-void refreshLevel(){
-    setLiquidLevel(liquid.getCurrentDistance());
-}
-
 void setLiquidLevel(uint16_t liquid){
-    if (liquid >= 1000){
+    if (liquid >= 200){
         liquidLevel = 100;
-    }else if (liquid <=100){
+    }else if (liquid <= 30){
         liquidLevel = 1;
     }else {
-        liquidLevel = liquid * 0.01;
+        liquidLevel = (liquid * 100) / 200;
     }
     
 }
 
-uint8_t getLiquidLevel(){
+void refreshLevel(int level){
+    setLiquidLevel(level);
+}
+//=====[Declarations (prototypes) of private functions]========================
+void refreshLevel();
+void checkLevel();
+void setLiquidLevel(uint16_t liquid);
+//=====[Implementations of public functions]===================================
+
+ultrasonic liquid(D7, D6, 1, .1, &refreshLevel);
+
+void liquidControlInit(){
+    
+    liquid.startUpdates(); //Start measuring alcohol level.
+    timerLevel.attach(&checkLevel, 0.1);
+}
+
+void checkLevel(){
+    liquid.checkDistance();
+}
+
+
+float getLiquidLevel(){
     return liquidLevel;
 }
