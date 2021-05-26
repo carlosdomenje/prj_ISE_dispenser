@@ -37,11 +37,11 @@ Para ver una explicación detallada de cada uno de los puntos propuestos, abra e
 
 ### Entregables del proyecto: 🛠️
 
-* Diagrama en bloques -> (ver: [Diagrama en bloques] (/diagramaFlujo.pdf))
+* Diagrama en bloques -> (ver: [Diagrama en bloques](./bloques.png))
 * Conexionado hardware -> (ver: [Conexionado](./tp-diagrama.png))
 * Modelado del software (o de alguna parte del mismo) (Diagrama de flujo o máquinas de estado u otro).
     -> (ver: [Diagrama](./diagramaFlujo.pdf))
-* Repositorio con el código (:))
+* Repositorio con el código (😎)
 * Video del funcionamiento -> (https://youtu.be/xVcdWI9hyU0)
 
 
@@ -81,7 +81,8 @@ Puede contribuir realizando un pull request con las sugerencias al proyecto.
 
 ## Wiki 📖
 
-Puedes encontrar 
+Puedes encontrar mas informacion en el campus de la cátedra
+[Campus](https://campus.fi.uba.ar/course/view.php?id=3312)
 
 ## Versionado 📌
 
