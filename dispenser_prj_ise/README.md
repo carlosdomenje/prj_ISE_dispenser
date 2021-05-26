@@ -49,14 +49,14 @@ Para ver una explicación detallada de cada uno de los puntos propuestos, abra e
 
 Para realizar la Implementación deberá tener los siguientes elementos:
 
-1 - Placa NUCLEO H743ZI2
-1 - display OLED 128x64
-1 - sensor de temperatura MLX90614
-1 - ESP32
-1 - Potenciometro de 10 KOhm
-2 - Sensores de ultrasonido HC-SR04
-2 - Relays
-1 - Fuente de alimentación de 3.3V y 5V
+* 1 - Placa NUCLEO H743ZI2
+* 1 - display OLED 128x64
+* 1 - sensor de temperatura MLX90614
+* 1 - ESP32
+* 1 - Potenciometro de 10 KOhm
+* 2 - Sensores de ultrasonido HC-SR04
+* 2 - Relays
+* 1 - Fuente de alimentación de 3.3V y 5V
 
 Mbed Studio para poder realizar el debug de la aplicación
 [Mbed Studio](https://os.mbed.com/studio/) 
