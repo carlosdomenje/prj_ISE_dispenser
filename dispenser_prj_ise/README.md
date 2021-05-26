@@ -1,24 +1,65 @@
 Autor: Domenje Carlos R. - 2021
 
-# Dispenser 
+# Sistema inteligente de ingreso de personas con medición de temperatura y expendio de alcohol en gel.
 
-Proyecto Final Introduccion a Sistemas Embebidos
-
-## Introduccion 🚀
-
-Este proyecto tiene como finalidad la evaluacion de lo aprendido en la catedra Introduccion a los Sistemas Embebidos correspondiente a la especializacion en internet de las cosas de la FIUBA. 
+Proyecto Final Introducción a Sistemas Embebidos
 
 
+## Introducción 🚀
 
-Mira **Despliegue** para conocer como desplegar el proyecto.
+Este proyecto tiene como finalidad la evaluación de lo aprendido en la cátedra Introducción a los Sistemas Embebidos correspondiente a la especialización en internet de las cosas de la FIUBA. 
 
 
-### Pre-requisitos 📋
 
-[Docker](https://docs.docker.com/get-docker/)  y [Docker Compose](https://docs.docker.com/compose/install/) son necesarios para la ejecucion del proyecto.
+Mira **Implementación** para conocer como implementar el proyecto.
 
-Guia de instalacion en Ubuntu 18,17,16 y 14
-[Docker install - Ubuntu](https://iot-es.herokuapp.com/post/details/2) 
+
+### Requisitos 📋
+
+El proyecto final de aprobación de la materia consiste en una presentación de un proyecto de desarrollo propio basado en una aplicación real que respete los siguientes lineamientos:
+
+* Debe emplearse la placa NUCLEO
+
+* Puede ser una aplicación diferente (no necesariamente domótica)
+
+* Puede utilizar los sensores vistos o agregar los nuevos
+
+* Debe usar al menos una entrada analógica
+
+* Debe usar comunicación serie 
+
+* Realizar la temporización del sistema basada en interrupciones y uso de timers
+
+Para ver una explicación detallada de cada uno de los puntos propuestos, abra el informe adjunto. 
+
+* [Informe del TP](/informe.pdf)
+
+
+### Entregables del proyecto: 🛠️
+
+* Diagrama en bloques -> (ver: [Diagrama en bloques] (/diagrama-bloques.pdf))
+* Conexionado hardware -> (ver: [Conexionado](/conexionado.pdf))
+* Modelado del software (o de alguna parte del mismo) (Diagrama de flujo o máquinas de estado u otro).
+    -> (ver: [Diagrama de flujo](/diagrama-flujo.pdf))
+* Repositorio con el código (:))
+* Video del funcionamiento -> (https://youtu.be/xVcdWI9hyU0)
+
+
+## Implementación 📦
+
+Para realizar la Implementación deberá tener los siguientes elementos:
+
+1 - Placa NUCLEO H743ZI2
+1 - display OLED 128x64
+1 - sensor de temperatura MLX90614
+1 - ESP32
+1 - Potenciometro de 10 KOhm
+2 - Sensores de ultrasonido HC-SR04
+2 - Relays
+1 - Fuente de alimentación de 3.3V y 5V
+
+Mbed Studio para poder realizar el debug de la aplicación
+[Mbed Studio](https://os.mbed.com/studio/) 
 
 Opcional: 
 [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) es necesario si quiere realizar por linea de comandos el clone del repositorio.
@@ -29,29 +70,10 @@ git clone https://github.com/carlosdomenje/prj_ISE_dispenser.git
 
 ```
 
-## Despliegue 📦
-
-Para realizar el despliegue de la aplicacion primero debera ingresar a la carpeta del proyecto:
-
-```
-cd 
-```
-Abrir  y ejecutar:
-
-```
-
-```
-
-
-
-## Captura de la aplicacion 📳️
+## Captura de la Implementación 📳️
 
 ![Aplicacion](/app.png)
 
-## Herramientas utilizadas 🛠️
-
-
-* [nucleo F](https://www.phpmyadmin.net/)
 
 ## Contribuir 🖇️
 
@@ -72,7 +94,7 @@ Este proyecto está bajo la Licencia GPL.
 
 ## Gratitud 🎁
 
-* Con este proyecto pude comprender .📢
+* Con este proyecto pude interactuar entre varios sensores y realizar una implementación aplicable al desarrollo de un producto comercial.📢
 * Agradezco a todos los profesores de la catedra Introduccion a los Sistemas Embebidos de FIUBA🤓.
 
 
